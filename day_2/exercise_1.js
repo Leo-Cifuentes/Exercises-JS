@@ -1,0 +1,16 @@
+var playlist = ["Así vivo yo - Orquesta Colon", "Love Bites -  Deff Lepard", "Gaga - JBalvin"];
+console.log("Lista original: ".concat(playlist, ".\n________________________________________________________"));
+playlist.push("En Alta - J Balvin");
+console.log(playlist, "\n________________________________________________________");
+playlist.unshift("Abicú - Roberto Angleró");
+console.log(playlist, "\n________________________________________________________");
+playlist.pop();
+console.log(playlist, "\n________________________________________________________");
+playlist.shift();
+console.log(playlist, "\n________________________________________________________");
+var listaDeCompras = ["Leche", "Pan", "Carne", "Huevos", "Queso"];
+var articuloPan = listaDeCompras.indexOf("Pan");
+console.log("Pan esta en la posici\u00F3n ".concat(articuloPan, " de la lista de compras.\n________________________________________________________"));
+var articulosComprados = listaDeCompras.slice(1, 3);
+console.log("Art\u00EDculos comprados: ".concat(articulosComprados, ".\n________________________________________________________"));
+console.log("Lista de compras original: ".concat(listaDeCompras, "."));
