@@ -1,2 +1,2 @@
-# Exercises
-Repo for practicing and resolve some exercise.
+# Exercises JS
+Repo for practicing and resolve some exercise in javascript.
