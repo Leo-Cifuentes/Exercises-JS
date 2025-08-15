@@ -1,0 +1,41 @@
+type Tarea = {id?:number, descripcion?:string, completada?:boolean};
+type Lista = Tarea [];
+
+const listaDeTareasInicial : Lista = [
+    {id:1, descripcion:"Aprender .map", completada:true},
+    {id:2, descripcion:"Aprender .filter", completada:true},
+    {id:3, descripcion:"Aprender .reduce", completada:false}
+];
+const lista : Lista = [...listaDeTareasInicial];
+
+function añadirTarea(lista:Lista, descripcionNuevaTarea:string):Lista{
+    const nuevaTarea : Tarea = {
+        id: Date.now() + Math.floor(Math.random() * 10), 
+        descripcion: descripcionNuevaTarea, 
+        completada: false};
+    return [...lista, nuevaTarea];
+}    
+console.log(añadirTarea(lista, "Aprender arrowFunction"));
+
+function completarTarea(lista: Lista, id: number): Lista {
+    return lista.map(tarea =>
+        tarea.id === id
+            ? { ...tarea, completada: true }
+            : tarea
+    );
+}
+console.log(completarTarea(lista, 3));
+
+function eliminarTarea(lista:Lista, id:number):Lista{
+    return lista.filter(tarea =>
+        tarea.id !== id            
+    );
+}
+
+console.log(eliminarTarea(lista, 1));
+
+function listaPendientes(lista:Lista):Lista{
+    return lista.filter(completa => completa.completada !== true);
+}
+
+console.log(listaPendientes(lista));
