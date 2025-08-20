@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Día 20 - Formularios</title>
+    <style>
+        body { font-family: sans-serif; }
+        form { display: flex; flex-direction: column; gap: 10px; max-width: 300px; }
+        .error { color: red; font-size: 0.9em; min-height: 1em; }
+    </style>
+</head>
+<body>
+    <h2>Formulario de Contacto</h2>
+    <form id="contacto-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        
+        <label for="mensaje">Mensaje (mín. 10 caracteres):</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+        <p id="error-mensaje" class="error"></p>
+        
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="resultado-envio"></div>
+</body>
+<script src="exercise.js"></script>
+</html>

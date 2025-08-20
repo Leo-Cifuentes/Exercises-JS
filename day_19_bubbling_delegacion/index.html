@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Día 19 - Bubbling y Delegación</title>
+    <style>
+        body { font-family: sans-serif; }
+        .caja { padding: 20px; border: 2px solid black; margin: 10px; }
+        #externo { border-color: red; }
+        #medio { border-color: blue; }
+        #interno { border-color: green; background-color: lightgreen; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="externo" class="caja">Caja Externa
+        <div id="medio" class="caja">Caja Media
+            <p id="interno" class="caja">Caja Interna (Haz clic aquí)</p>
+        </div>
+    </div>
+    <hr style="margin-top: 30px;">
+    <ul id="lista-delegacion">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+    </ul>
+    <script src="exercise.js"></script>
+</body>
+</html>
