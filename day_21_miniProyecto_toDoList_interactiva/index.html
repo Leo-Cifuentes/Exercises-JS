@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Día 21 - To-Do List</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f4; display: flex; justify-content: center; margin-top: 50px; }
+        .contenedor { max-width: 500px; background: white; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        ul { list-style-type: none; padding: 0; }
+        li { padding: 12px; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+        li.completada span { text-decoration: line-through; color: #888; }
+        #nueva-tarea-form { display: flex; }
+        #nueva-tarea-input { flex-grow: 1; padding: 10px; border: 1px solid #ddd; }
+        .delete-btn { background: #e74c3c; color: white; border: none; cursor: pointer; padding: 5px 10px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Lista de Tareas</h2>
+        <form id="nueva-tarea-form">
+            <input type="text" id="nueva-tarea-input" placeholder="¿Qué necesitas hacer?">
+            <button type="submit">Añadir</button>
+        </form>
+        <ul id="lista-tareas">
+        </ul>
+    </div>
+    <script src="exercise.js"></script>
+</body>
+</html>
