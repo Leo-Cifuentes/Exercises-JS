@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Día 28 - Proyecto Final</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f0f2f5; display: flex; flex-direction: column; align-items: center; padding: 40px; }
+        #generar-usuario-btn { padding: 12px 24px; font-size: 1em; cursor: pointer; margin-bottom: 30px; border-radius: 5px; border: none; background-color: #007bff; color: white; }
+        #tarjeta-usuario-contenedor { min-height: 350px; }
+        .tarjeta {
+            background-color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 320px; text-align: center; padding: 30px;
+        }
+        .tarjeta img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid #eee; }
+        .tarjeta h2 { margin: 15px 0 5px 0; }
+        .tarjeta p { color: #555; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <button id="generar-usuario-btn">Generar Nuevo Usuario Aleatorio</button>
+    <div id="tarjeta-usuario-contenedor">
+    </div>
+    <script src="exercise.js"></script>
+</body>
+</html>
